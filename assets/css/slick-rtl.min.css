@@ -1,0 +1,232 @@
+.mbfg-slick-carousel .slick-list,
+.mbfg-slick-carousel .slick-slider,
+.mbfg-slick-carousel .slick-track {
+	position: relative;
+	display: block
+}
+
+.mbfg-slick-carousel .slick-loading .slick-slide,
+.mbfg-slick-carousel .slick-loading .slick-track {
+	visibility: hidden
+}
+
+.mbfg-slick-carousel .slick-slider {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent
+}
+
+.mbfg-slick-carousel .slick-list {
+	overflow: hidden;
+	margin: 0;
+	padding: 0
+}
+
+.mbfg-slick-carousel .slick-list:focus {
+	outline: 0
+}
+
+.mbfg-slick-carousel .slick-list.dragging {
+	cursor: pointer;
+	cursor: hand
+}
+
+.mbfg-slick-carousel .slick-slider .slick-list,
+.mbfg-slick-carousel .slick-slider .slick-track {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
+}
+
+.mbfg-slick-carousel .slick-track {
+	top: 0;
+	right: 0
+}
+
+.mbfg-slick-carousel .slick-track:after,
+.mbfg-slick-carousel .slick-track:before {
+	display: table;
+	content: ''
+}
+
+.mbfg-slick-carousel .slick-track:after {
+	clear: both
+}
+
+.mbfg-slick-carousel .slick-slide {
+	display: none;
+	float: right;
+	height: 100%;
+	min-height: 1px
+}
+
+[dir=rtl] .mbfg-slick-carousel .slick-slide {
+	float: left
+}
+
+.mbfg-slick-carousel .slick-slide img {
+	display: block
+}
+
+.mbfg-slick-carousel .slick-slide.slick-loading img {
+	display: none
+}
+
+.mbfg-slick-carousel .slick-slide.dragging img {
+	pointer-events: none
+}
+
+.mbfg-slick-carousel .slick-initialized .slick-slide {
+	display: block
+}
+
+.mbfg-slick-carousel .slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent
+}
+
+.mbfg-slick-carousel .slick-arrow.slick-hidden {
+	display: none
+}
+
+.mbfg-slick-carousel {
+	padding: 45px;
+}
+
+.mbfg-slick-carousel .slick-prev,
+.mbfg-slick-carousel .slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: auto;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: #aaa;
+	border: 1px solid #aaa;
+	outline: none;
+	background: transparent;
+	border-radius: 0;
+}
+
+.mbfg-slick-carousel .slick-prev:before,
+.mbfg-slick-carousel .slick-next:before {
+	font-size: 35px;
+	line-height: 1;
+	opacity: .75;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mbfg-slick-carousel .slick-prev:before,
+[dir="rtl"] .mbfg-slick-carousel .slick-prev:before,
+.mbfg-slick-carousel .slick-next:before,
+[dir="rtl"] .mbfg-slick-carousel .slick-next:before {
+	content: '';
+	font-size: 0;
+	line-height: 0;
+}
+
+.mbfg-slick-carousel .slick-prev {
+	right: -45px;
+	z-index: 1;
+	border-radius:0;
+}
+
+[dir="rtl"] .mbfg-tm__arrow-outside.mbfg-slick-carousel .slick-prev {
+	right: auto;
+	left: -45px;
+}
+
+.mbfg-slick-carousel button.slick-arrow {
+	padding: 7px;
+}
+
+.mbfg-slick-carousel .slick-prev i,
+.mbfg-slick-carousel .slick-next i,
+.mbfg-slick-carousel .slick-prev i:hover,
+.mbfg-slick-carousel .slick-next i:hover,
+.mbfg-slick-carousel .slick-prev i:focus,
+.mbfg-slick-carousel .slick-next i:focus {
+	font-size: 20px;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.6em;
+	text-align: center;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.mbfg-slick-carousel ul.slick-dots {
+	padding-top: 0;
+	display: block;
+	position: absolute;
+	margin: 0;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	text-align: center;
+}
+
+.mbfg-slick-carousel ul.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.mbfg-slick-carousel ul.slick-dots li.slick-active button:before {
+	opacity: .75;
+	color: black;
+}
+
+.mbfg-slick-carousel ul.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.mbfg-slick-carousel ul.slick-dots li button:before {
+	font-family: none;
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 976px) {
+	.mbfg-slick-carousel {
+		padding: 0;
+	}
+}

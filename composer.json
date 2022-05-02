@@ -1,0 +1,18 @@
+{
+  "name": "alamgir/map-block-for-gutenberg",
+  "description": "The Map Block for Gutenberg easy to create any form.",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5",
+    "wp-coding-standards/wpcs": "^2.2",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "wp-cli/wp-cli-bundle": "^2.5",
+    "phpunit/phpunit": "^8",
+    "yoast/phpunit-polyfills": "^1"
+  },
+  "scripts": {
+    "format": "phpcbf",
+    "lint": "phpcs",
+    "test": "vendor/bin/phpunit"
+  }
+}
